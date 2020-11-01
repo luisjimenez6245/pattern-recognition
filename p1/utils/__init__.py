@@ -1,5 +1,5 @@
 import random
-
+from math import ceil
 
 def gen_count(size=100):
     arr = []
@@ -18,5 +18,5 @@ def gen_random_arr(size, _from=0,  limit=0):
 
 
 def gen_random_numbers(_from=0,  limit=0):
-    x = random.uniform(_from, limit)
+    x = ceil(random.uniform(_from, limit))
     return x

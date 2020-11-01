@@ -13,3 +13,16 @@ class Grapher():
         ax = plt.gca()
         ax.set_xticklabels([])
         plt.show()
+
+    @classmethod
+    def bell_graph(cls, data, size =  100):
+        data.sort()
+        a = np.array(data)
+        unique, counts = np.unique(a, return_counts=True)
+        y = dict(zip(unique, counts))
+        x =  gen_count(len(y))
+        plt.plot(x, y.values())
+        ax = plt.gca()
+        ax.set_xticklabels([])
+        plt.show()
+        
