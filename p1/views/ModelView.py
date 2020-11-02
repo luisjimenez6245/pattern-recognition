@@ -11,5 +11,5 @@ class ModelView(Frame):
         self.grid()
         self.master.title(name)
         self.model = Model(
-            
+            ''
         )
