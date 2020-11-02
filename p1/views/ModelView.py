@@ -7,4 +7,4 @@ class ModelView(Frame):
         super().__init__(master=master)
         self.grid()
         self.master.title("Clase")
-
+        
