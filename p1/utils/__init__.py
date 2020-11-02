@@ -3,7 +3,6 @@ from math import ceil
 import numpy as np
 
 
-
 def gen_item_dict(size =  100, _from=0,  limit=0):
     data = gen_random_arr(size, _from, limit)
     a = np.array(data)
