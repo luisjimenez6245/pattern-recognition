@@ -4,7 +4,7 @@ import tkinter as tk
 
 
 root = tk.Tk()
-root.geometry("500x200")
+root.geometry("800x800")
 window = MainView(master = root, classes= classes)
 window.master.title("Clasificador Bayersiano")
 window.mainloop()

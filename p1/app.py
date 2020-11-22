@@ -5,7 +5,6 @@ from controllers import Classifier
 from collections import OrderedDict
 
 def get_models(names = [], characs = []):
-    should_continue = True
     size = 0
     char_dict = {}
     for charc in characs:
@@ -13,7 +12,6 @@ def get_models(names = [], characs = []):
         opc = "Y"
         keys = []
         print("A continuación se te pediran los valores para la caracterítica  " + charc )
-        should_continue = True
         while(opc == "Y"):
             key = input("Ingresa uno de los posbiles valores para la caracterítica:\n")
             if(key  not in keys):
