@@ -1,6 +1,7 @@
+from .utils import BaseClassifier
 import numpy as np
 
-class MahalanobisDistance():
+class MahalanobisDistance(BaseClassifier):
 
     def __init__(self, classes):
         self.classes = {}

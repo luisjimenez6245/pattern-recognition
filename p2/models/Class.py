@@ -43,7 +43,7 @@ class Class(BaseModel):
             counter_charac += 1
         self.z = z
         self.items = (helper_items)
-        self.characteristics = characteristic
+        self.characteristics = characteristics
         return self
 
     def update_model(self, value):

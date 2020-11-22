@@ -1,5 +1,4 @@
 from tkinter import Frame
-from models import Characteristic, Model
 
 
 class ModelView(Frame):
