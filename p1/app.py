@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 from utils.data import apple, orange, mango
 from utils.menu import is_int, is_float
 from models import Model, Characteristic
@@ -138,3 +139,8 @@ if __name__ == "__main__":
             
     main(models)
     print("Gracias por usar el programa")
+=======
+print('hola')
+    
+
+>>>>>>> Stashed changes
