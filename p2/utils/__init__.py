@@ -31,8 +31,5 @@ def gen_random_numbers(_from=0,  limit=0):
     return x
 
 def get_centroid(items):
-    res = 0
-    for i in items:
-        res += i
-    res = res / len(items)
+    res = np.mean(items)
     return res
