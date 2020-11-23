@@ -39,12 +39,17 @@ class ClassifierResultView(Frame):
         self.pack()
         self.classifier = classifier
         Label(master=self, text=name).pack()
-        self.res = Label(master=self, text='Resultado:')
+        self.res = Label(master=self, text='')
         self.res.pack()
 
     def calc(self, x):
         res = self.classifier.compare(x)
-        self.res['text'] = str(res)
+        c = self.classifier.get_first_element(res)
+        text = "PERTENECE A:{} ".format(c)
+        for item in res:
+            pass
+            #text += "{}:{:.2f} ".format(item, res[item])
+        self.res['text'] = text
 
 
 class MainView(Frame):

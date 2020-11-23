@@ -4,4 +4,4 @@ import numpy as np
 
 class InfinityClassifier(MetricClassifier):
     
-    r = np.Infinity
+    r = 1000

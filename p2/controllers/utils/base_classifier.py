@@ -20,3 +20,9 @@ class BaseClassifier():
         res = self.compare(x)
         res = {k: v for k, v in sorted(res.items(), key=lambda item: item[1])}
         return list(res.keys())[0]
+    
+
+    @staticmethod
+    def get_first_element(x):
+        res = {k: v for k, v in sorted(x.items(), key=lambda item: item[1])}
+        return list(res.keys())[0]
