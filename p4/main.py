@@ -32,7 +32,6 @@ if __name__ == '__main__':
         conjunto=conjunto
     )
 
-    print(conjunto)
     #### Aprendiendo #####
     p.aprender()
 
