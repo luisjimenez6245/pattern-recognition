@@ -1,5 +1,6 @@
 from PIL import Image
 import numpy as np
+import sys
 
 def image_to_bitmap(path, out_path = ''):
     img = Image.open(path)
@@ -15,12 +16,21 @@ def image_to_bitmap(path, out_path = ''):
     bitmap = list(map(lambda x: 0.299*x[0]+0.587*x[1]+0.114*x[2], 
     zip(r,g,b)))
     bitmap = np.array(bitmap).reshape([ary.shape[0], ary.shape[1]])
-    bitmap = np.dot((bitmap > 128).astype(float),255)
+    bitmap = np.dot((bitmap > 128).astype(float),1)
     return bitmap
 
 
+def print_bit_map(bm):
+    for i in bm:
+        res = ""
+        for j in i:
+            res += str(int(j)) +" "
+        print(res)
+
+
 if __name__ == "__main__":
-    image_to_bitmap('./images/1.png')
+    bm = (image_to_bitmap('./images/{}.png'.format(sys.argv[1])))
+    print_bit_map(bm)
 
 """"
 import gzip
