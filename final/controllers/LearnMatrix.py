@@ -1,4 +1,6 @@
 import numpy as np
+from models import Pattern
+
 
 class LearnMatrix():
     e = 10
