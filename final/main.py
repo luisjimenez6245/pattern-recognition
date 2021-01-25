@@ -43,6 +43,6 @@ root.geometry("800x500")
 
 
 window = MainView(master=root, learn_matrix = m)
-window.master.title("Clasificador Bayersiano")
+window.master.title("LearnMatrix")
 window.mainloop()
 window.mainloop()
