@@ -5,9 +5,11 @@ from models import Pattern
 class LearnMatrix():
     e = 10
     mat = []
+    classes = []
 
-    def __init__(self, patterns=[]):
+    def __init__(self, patterns=[], classes = []):
         self.learn(patterns)
+        self.classes = classes
 
     def learn(self, patterns=[]):
         size_class = len(patterns[0].target)
